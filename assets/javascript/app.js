@@ -17,7 +17,7 @@ var question2 = {
 		"Fluoride",
 		"Fiji Mermaid"
 	],
-	"answer": "Mothman"
+	"answer": "Fiji Mermaid"
 };
 
 var question3 = {
@@ -32,7 +32,7 @@ var question3 = {
 };
 
 var question4 = {
-	"question": "What did Neo ingest that caused his crazy trip?",
+	"question": "What did Neo ingest to cause his super crazy trip?",
 	"choices": [
 		"Red Pill",
 		"LSD",
@@ -54,7 +54,7 @@ var question5 = {
 };
 
 var question6 = {
-	"question": "To which country did Hitler escape before faking his death?",
+	"question": "To which country did Hitler escape after faking his death?",
 	"choices": [
 		"Argentina",
 		"Bolivia",
@@ -67,8 +67,8 @@ var question6 = {
 var question7 = {
 	"question": "Which country has the most UFO sightings?",
 	"choices": [
-		"Britain",
-		"France",
+		"Mexico",
+		"Norway",
 		"United States",
 		"Ecuador"
 	],
@@ -87,7 +87,7 @@ var question8 = {
 };
 
 var question9 = {
-	"question": "Which of these families has less than a trillion dollars in net worth (adjusted for today)?",
+	"question": "Which of the following families has less than a trillion dollars in net worth (adjusted for today)?",
 	"choices": [
 		"Rothschild",
 		"Rockefeller",
