@@ -13,7 +13,7 @@ var question2 = {
 	"question": "Which of these have been proven to be a hoax?",
 	"choices": [
 		"Project MKUltra",
-		"Mothman",
+		"FEMA Camps",
 		"Fluoride",
 		"Fiji Mermaid"
 	],
@@ -32,7 +32,7 @@ var question3 = {
 };
 
 var question4 = {
-	"question": "What did Neo ingest to cause his super crazy trip?",
+	"question": "What did Neo from the Matrix ingest to cause his super crazy trip?",
 	"choices": [
 		"Red Pill",
 		"LSD",
@@ -121,6 +121,9 @@ var questionsRemaining = game["questions"].slice();
 
 var timer;
 
+$("#song")[0].play();
+$("#song")[0].loop = true;
+
 var resetTimer = function() {
 	var timeRemaining = 30;
 	$("#timer").text(timeRemaining + " seconds remaining");
@@ -162,7 +165,7 @@ var displayQuestion = function() {
 		// remove the question that was just asked from the questions array
 		questionsRemaining.shift();
 	} else {
-		var messageElement = $("<div>").text("All done, here's how you did!");
+		var messageElement = $("<div>").text("We're done here! This never happened.");
 		$(".question-container").append(messageElement);
 		var correctAnswerElement = $("<div>").text("Correct Answers: " + game["correctCount"]);
 		$(".question-container").append(correctAnswerElement);
@@ -185,7 +188,7 @@ var delayNextQuestion = function() {
 			resetTimer();
 		}
 		displayQuestion();
-	}, 3000);
+	}, 4000);
 }
 
 var spawnRestartButton = function() {
@@ -198,7 +201,7 @@ $(document).on("click", ".choice", function() {
 	if($(this).text() === $(this).attr("answer")) {
 		clearQuestion();
 		clearInterval(timer);
-		var messageElement = $("<div>").text("Correct!");
+		var messageElement = $("<div>").text("Correct, but now they know you know...");
 		$(".question-container").append(messageElement);
 		game["correctCount"]++;
 		delayNextQuestion();
@@ -206,7 +209,7 @@ $(document).on("click", ".choice", function() {
 		var correctAnswerElement = $("<div>").text("The correct answer is: " + $(this).attr("answer"));
 		clearQuestion();
 		clearInterval(timer);
-		var messageElement = $("<div>").text("Nope!");
+		var messageElement = $("<div>").text("You've been lied to!");
 		$(".question-container").append(messageElement);
 		$(".question-container").append(correctAnswerElement);
 		game["incorrectCount"]++;

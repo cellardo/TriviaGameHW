@@ -1,0 +1,40 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+h1 {
+    font-family: 'Michroma', sans-serif;
+	font-size: 48px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	padding: 20px;
+}
+
+.container {
+	font-size: 36px;
+	width: 50%;
+	margin: auto;
+	text-align: center;
+	border: 1px solid #fff;
+	padding: 20px;
+}
+
+#timer {
+	font-size: 50px;
+}
+
+.choice {
+	text-align: left;
+	cursor: crosshair;
+}
+
+.choice:hover, .choice:active {
+	background-color: #fff;
+	color: #000;
+}
+
+button {
+	font-size: 60px;
+}
