@@ -126,13 +126,11 @@ $("#song")[0].loop = true;
 
 var resetTimer = function() {
 	var timeRemaining = 30;
-	$("#timer").text(timeRemaining + " seconds remaining");
+	$("#timer").text(timeRemaining);
 	timer = setInterval(function() {
 		timeRemaining--;
 		if(timeRemaining !== 1) {
-			$("#timer").text(timeRemaining + " seconds remaining");
-		} else {
-			$("#timer").text(timeRemaining + " second remaining");
+			$("#timer").text(timeRemaining);
 		}
 		if(timeRemaining === 0) {
 			var correctAnswerElement = $("<div>").text("The correct answer is: " + $(".choice").attr("answer"));
@@ -155,6 +153,7 @@ var displayQuestion = function() {
 		var answer = questionsRemaining[0]["answer"];
 
 		var questionElement = $("<div>").text(question);
+		questionElement.addClass("question");
 		$(".question-container").append(questionElement);
 		for(var i = 0; i < choices.length; i++) {
 			var choiceElement = $("<div>").text(choices[i]);

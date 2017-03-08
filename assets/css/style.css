@@ -1,5 +1,5 @@
 body {
-    background-color: #000;
+    background-color: #08172b;
     color: #fff;
 }
 
@@ -14,15 +14,18 @@ h1 {
 
 .container {
 	font-size: 36px;
-	width: 50%;
+	width: 100%;
 	margin: auto;
 	text-align: center;
-	border: 1px solid #fff;
-	padding: 20px;
 }
 
 #timer {
-	font-size: 50px;
+	font-size: 80px;
+}
+
+.question, .message {
+	background-color: rgba(0, 0, 0, 0.4);
+	padding: 40px;
 }
 
 .choice {
