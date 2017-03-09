@@ -21,21 +21,21 @@ var question2 = {
 };
 
 var question3 = {
-	"question": "Which of these did JFK warn us about in a speech?",
+	"question": "What did JFK warn us about in a 1961 speech?",
 	"choices": [
 		"Military-Industrial Complex",
 		"Secret Societies",
-		"Bad Relations with Cuba",
+		"CIA",
 		"The Mafia"
 	],
 	"answer": "Secret Societies"
 };
 
 var question4 = {
-	"question": "What did Neo from the Matrix ingest to cause his super crazy trip?",
+	"question": "In The Matrix, what did Neo take that allowed him to see things as they really were?",
 	"choices": [
 		"Red Pill",
-		"LSD",
+		"Purple Pill",
 		"Blue Pill",
 		"Nyquil"
 	],
@@ -54,7 +54,7 @@ var question5 = {
 };
 
 var question6 = {
-	"question": "To which country did Hitler escape after faking his death?",
+	"question": "Where did Hitler escape to after faking his death?",
 	"choices": [
 		"Argentina",
 		"Bolivia",
@@ -67,7 +67,7 @@ var question6 = {
 var question7 = {
 	"question": "Which country has the most UFO sightings?",
 	"choices": [
-		"Mexico",
+		"Russia",
 		"Norway",
 		"United States",
 		"Ecuador"
@@ -76,7 +76,7 @@ var question7 = {
 };
 
 var question8 = {
-	"question": "Which of the following belief systems asserts that human beings are kept in ignorance of their true Divine heritage by a false deity known as the Demiurge?",
+	"question": "Which of the following belief systems asserts that this material world was created by a lesser deity known as the Demiurge?",
 	"choices": [
 		"Sufism",
 		"Freemasonry",
@@ -87,18 +87,18 @@ var question8 = {
 };
 
 var question9 = {
-	"question": "Which of the following families has less than a trillion dollars in net worth (adjusted for today)?",
+	"question": "Which of these families has the highest net worth (adjusted for today)?",
 	"choices": [
 		"Rothschild",
 		"Rockefeller",
 		"Koch",
 		"Medici"
 	],
-	"answer": "Koch"
+	"answer": "Rothschild"
 };
 
 var question10 = {
-	"question": "Which of the following organizations were monitoring Martin Luther King, Jr.?",
+	"question": "Which of the following organizations were wiretapping Martin Luther King, Jr.?",
 	"choices": [
 		"NSA",
 		"CIA and FBI",
@@ -218,6 +218,7 @@ $(document).on("click", ".choice", function() {
 
 $(document).on("click", "#button-start", function() {
 	$("#button-start").css("display", "none");
+	$("#crest").css("display", "none");
 	resetTimer();
 	displayQuestion();
 });
