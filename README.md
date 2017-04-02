@@ -2,7 +2,7 @@
 Advanced Version
 
 ## Live Link
- - https://www.yoonslee.github.io/TriviaGameHW/
+ - https://yoonslee.github.io/TriviaGameHW/
 
 ## Requirements
 - Create a trivia game that shows one question at a time until it is answered or the time limit is up
